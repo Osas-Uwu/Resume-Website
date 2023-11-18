@@ -17,7 +17,7 @@ body{
     background: linear-gradient(300deg, #c1d3c1, #a8d8a8, #355449); /* # */
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -303,4 +303,7 @@ footer{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+ .img1{
+    position: relative;
   }
