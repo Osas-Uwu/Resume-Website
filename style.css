@@ -201,7 +201,7 @@ h1, .head2{
 
 /*Video Styling */
 .video{
-    height: 400px !important; /* Set your desired height */
+    height: 400px !important; 
     width: 100%;
     object-fit: cover;
     display: block;
@@ -209,7 +209,7 @@ h1, .head2{
 }
 
 .design{
-    width: 30%; /* Set your desired width */
+    width: 30%; 
     height: auto;
     border-radius: 40%;
     background-color: #f0f0f091;
@@ -223,7 +223,7 @@ h1, .head2{
     text-align: center;
 }
 #hobbies{
-    font-size: 1rem !important; /* Adjust the font size as needed */
+    font-size: 1rem !important; /* text size */
     margin-bottom: 0%;
     list-style-type: none;
 }
