@@ -17,14 +17,14 @@ body{
     background: linear-gradient(300deg, #c1d3c1, #a8d8a8, #355449); /* # */
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
-    height: 130vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 
@@ -82,6 +82,7 @@ body{
         transform: translateX(-100%);
     }
 }
+
 /*Passport Image Styling */
 .passport{
     height: 200px;
@@ -96,6 +97,12 @@ p, ul{
     padding-bottom: 10px;
     font-size: 1.4rem;
     text-align: justify;
+    list-style: none;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
 }
 
 h3, h2, h4, h5, h6 {
@@ -128,6 +135,188 @@ h5{
     font-size: 1.5rem;
 }
 
+/* Respomsiveness */
+@media (max-width: 667px) {
+    h1{
+        font-size: 3.6rem;
+    }
+    h3{
+        font-size: 1.2rem;
+        margin-top: 50px !important;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 0.75rem;
+
+    }
+    h5{
+        font-size: 0.675rem;
+        margin: 0%;
+    }
+    .AchievementParagraph{
+        font-size: 0.9rem;
+    }
+    .aboutMeText{
+        font-size: 0.9rem;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .img1{
+        width: 400px;
+    }
+    .gradient-background {
+        padding-top: 0px;
+        width: 100% !important;
+    }
+    .video{
+        height: 200px !important; 
+
+    }
+    .midcont .third-container{ 
+        margin: 50px;
+    }
+    #schoolPicture{
+        height: 190px !important;
+    }
+    #hobbies{
+        font-size: 0.7rem
+    }
+    #hobbies >li{
+        margin-bottom: 5px;
+    }
+    .footer-social {
+        font-size: 10px;
+    }
+    .passport{
+        height: 150px;
+        width: 150px;
+    }
+    #SchoolParagraph, #ulschool{
+        font-size: small;
+    }
+    p, ul{
+        font-size: 1.0rem;
+    }
+    .School, .contributions, .achievements{
+        grid-template-columns:  1fr !important;
+        width: 100%;
+        gap: 0 !important;
+    }
+    .School .grid-item1,
+    .School .grid-item2,
+    .contributions .grid-container,
+    .achievements .grid-container {
+        grid-column: span 1; /* Ensure individual grid items take up full width */
+    }
+    .SecondMiddle{
+        display: flex;
+       justify-content: center;
+    }
+    .design{
+        width: 50% !important; /* Set your desired width */
+        height: auto;
+        border-radius: 30% !important;
+    }
+    .contribution{
+        margin-top: 50% !important;
+    }
+    .midcont{
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+}
+
+@media (min-width: 667px ) and (max-width: 950px) {
+    h1{
+        font-size: 5.6rem;
+    }
+    h3{
+        font-size: 1.4rem;
+        margin-top: 70px !important;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    h4{
+        font-size: 1.2rem;
+
+    }
+    h5{
+        font-size: 1.0rem;
+        margin: 0%;
+    }
+    .AchievementParagraph{
+        font-size: 1.4rem;
+    }
+    .aboutMeText{
+        font-size: 1.4rem;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .img1{
+        width: 600px;
+        height: 200px !important;
+    }
+    .gradient-background {
+        padding-top: 0px;
+        width: 100% !important;
+    }
+    .video{
+        height: 200px !important; 
+
+    }
+    .midcont .third-container{ 
+        margin: 70px;
+    }
+    #schoolPicture{
+        height: 210px !important;
+    }
+    #hobbies{
+    font-size: 1.0rem
+    }
+    #hobbies >li{
+        margin-bottom: 8px;
+    }
+    .footer-social {
+        font-size: 13px;
+    }
+    .passport{
+        height: 170px;
+        width: 170px;
+    }
+    #SchoolParagraph, #ulschool{
+        font-size: medium;
+    }
+    p, ul{
+        font-size: 1.3rem;
+    }
+    .School, .contributions, .achievements{
+        grid-template-columns:  1fr !important;
+        width: 100%;
+        gap: 0 !important;
+    }
+    
+    .SecondMiddle{
+        display: flex;
+       justify-content: center;
+    }
+    .design{
+        width: 50% !important; /* Set your desired width */
+        height: auto;
+        border-radius: 30% !important;
+    }
+    .contribution{
+        margin-top: 70% !important;
+    }
+    .midcont{
+        margin-left: 7% !important;
+        margin-right: 7% !important;
+    }
+}
 /* Container Styling */
 .middle-container{
     background-color: #baceba;
@@ -146,7 +335,7 @@ h1, .head2{
 .img-container{
     display: flex;
     flex-direction: column;
-
+    /* To push the image to the bottom */
     align-items: center;
 }
 .midcont{
@@ -168,10 +357,10 @@ h1, .head2{
 /*School Section Styling */
 .School, .contributions, .achievements{
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
-    width: 70%;
+    width: 80%;
     place-items: center;
 }
 .mySchool{
@@ -209,7 +398,7 @@ h1, .head2{
 }
 
 .design{
-    width: 30%; 
+    width: 30%; /* Set your desired width */
     height: auto;
     border-radius: 40%;
     background-color: #f0f0f091;
@@ -223,7 +412,7 @@ h1, .head2{
     text-align: center;
 }
 #hobbies{
-    font-size: 1rem !important; /* text size */
+    font-size: 1rem !important; /* Adjust the font size as needed */
     margin-bottom: 0%;
     list-style-type: none;
 }
@@ -236,11 +425,20 @@ h1, .head2{
 }
 
 /* Footer Styling */
+
 footer{
     background: linear-gradient(300deg, #c1d3c1, #9fd69f, #355449);
     padding: 20px;
     text-align: center;
     margin-top: 30px;
+    padding: 50px;
+}
+.copyright{
+    text-align: center;
+    color: #ffffff;
+}
+.copyrightCont{
+    justify-content: center;
 }
 .footer-content{
     display: flex;
@@ -254,6 +452,8 @@ footer{
     text-decoration: none;
     margin: 0 px;
     transition: color 0,3s;
+    text-align: center;
+    gap: 30px;
 }
 .footer-link:hover {
     color: #a87070;
@@ -304,6 +504,6 @@ footer{
     margin-top: 100px;
     margin-bottom: 100px;
   }
- .img1{
+.img1{
     position: relative;
-  }
+}
